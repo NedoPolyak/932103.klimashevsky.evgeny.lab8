@@ -1,0 +1,129 @@
+* { 
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    padding: 10px;
+    flex-grow: 0;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.list-itemsContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 40px;
+    min-width: 30%;
+
+}
+
+.list-itemsContainer-initialItem {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-style: italic;
+    color:rgb(192, 192, 192);
+}
+
+.list-itemsContainer-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    flex-shrink: 0;
+    opacity: 0;
+}
+
+.list-itemsContainer-item-blankItem {
+    height: 40px;
+    width: 100px;
+    flex-shrink: 10;
+}
+
+.list-itemsContainer-item-text {
+    width: 200px;
+    background-color: white;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color:black;
+}
+
+
+
+.list-itemsContainer-item-numbers {
+    width: 200px;
+    background-color: white;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color:black;
+}
+
+.list-itemsContainer-item-button {
+    width:40px;
+    background-color: rgb(220, 220, 220);
+    border:1px solid black;
+    display: flex;
+    text-align: center;
+    transition: 0.3s ease-out;
+    
+}
+
+.list-itemsContainer-item-button:hover {
+    background-color:rgb(186, 186, 186) ;
+}
+
+.list-itemsContainer-item-button-svg {
+    width: 30px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+}
+
+.buttonsContainer-button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    background-color:rgb(220, 220, 220);
+    color:black;
+    transition: 0.3s ease-out;
+}
+
+.buttonsContainer-button:hover {
+    box-shadow: 0 0 20px rgb(50, 50, 50);
+}
+
+.jsonOutputContainer {
+    width: 300px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.jsonOutputContainer-jsonOutput {
+    display: none;
+    position: fixed;
+}
